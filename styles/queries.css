@@ -1,0 +1,141 @@
+@media (max-width: 77em) {
+  html {
+    font-size: 55%;
+  }
+
+  .team {
+    gap: 4rem;
+  }
+
+  .hero-contents {
+    gap: 4rem;
+  }
+}
+
+@media (max-width: 62em) {
+  .main-heading {
+    font-size: 4rem;
+  }
+  .nav-items {
+    position: fixed;
+    width: 70%;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgba(16, 17, 63, 0.713);
+    overflow-y: auto;
+    transform: translateX(-100%);
+    transition: all 0.3s;
+    z-index: 9999;
+  }
+  .show-nav-items {
+    transform: translateX(0);
+  }
+
+  .no-flexbox-gap .nav-item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 4.8rem;
+  }
+
+  .close-and-open-btn {
+    display: inline-block;
+  }
+  .team {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .hero-container {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-contents-img {
+    margin-top: 3rem;
+    height: 40rem;
+    overflow: hidden;
+  }
+
+  .hero-contents-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-contents {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .top-service-wrapper {
+    padding-bottom: 2rem;
+  }
+  .contact-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 44em) {
+  html {
+    font-size: 50%;
+  }
+  .container {
+    padding: 0 2rem;
+  }
+  .hero-section {
+    background-image: linear-gradient(
+        to top,
+        rgba(16, 17, 63, 0.3),
+        rgba(16, 17, 63, 0.3)
+      ),
+      url('../images/bghero-22.jpg');
+  }
+  .main-heading {
+    font-size: 3.8rem;
+  }
+  .header {
+    padding: 2rem;
+  }
+
+  .nav-link {
+    font-size: 2.3rem;
+  }
+
+  .main-cont {
+    text-align: center;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .hero-container {
+    gap: 6rem;
+  }
+
+  .hero-contents {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .about-container {
+    padding: 3rem 2rem;
+  }
+  /* .hero-contents {
+    grid-template-columns: 1fr;
+  } */
+  .team {
+    grid-template-columns: 1fr;
+  }
+
+  .services-content {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonials-section {
+    min-height: 70vh;
+  }
+
+  .testimonial-content div {
+    width: 16rem;
+    height: 16rem;
+  }
+  .contact-content {
+    grid-template-columns: 1fr;
+  }
+}
